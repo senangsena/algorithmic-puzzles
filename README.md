@@ -1,2 +1,2 @@
 # creative-algorithmic-puzzles
-Creative algorithmic puzzles solved by lateral thinking and implemented in code.
+Turning creative algorithmic puzzles into code through lateral thinking.
