@@ -2,7 +2,7 @@
 # 自分で設定した設定に合わせて、プログラムが問題を解きます
 # 解く過程・思考の方法も出力
 
-class solve12coins:
+class Solve12coins:
 
     def __init__(self, default_weight: int, oddcoins_weight: int, oddcoins_id: int):
         
@@ -18,8 +18,8 @@ class solve12coins:
 
     # 天秤
     def tenbin(self, left: list[int], right: list[int]) -> str:
-        left_weights = sum([self.weights[id] for id in left])
-        right_weights = sum([self.weights[id] for id in right])
+        left_weights = sum(self.weights[id] for id in left)
+        right_weights = sum(self.weights[id] for id in right)
 
         if left_weights == right_weights:
             return "つりあう"
@@ -222,7 +222,7 @@ if __name__ == "__main__":
     print(f"\n設定: (通常:{default_weight}g / 偽物:{oddcoins_weight}g / 番号:{oddcoins_id}番)")
     print("それでは、プログラムに解かせてみましょう...\n")
 
-    problem = solve12coins(default_weight, oddcoins_weight, oddcoins_id)
+    problem = Solve12coins(default_weight, oddcoins_weight, oddcoins_id)
 
     # プログラムに解かせる
     problem.solve()

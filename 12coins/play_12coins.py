@@ -1,7 +1,7 @@
 # 実際に謎解きができるプログラム
 import random
 
-class play12coins:
+class Play12coins:
 
     def __init__(self):
 
@@ -113,7 +113,7 @@ def clear_lines(n):
 
 if __name__ == "__main__":
 
-    play = play12coins()
+    play = Play12coins()
     
 
     print("12枚のコイン【1】〜【12】の中には、一枚だけ他のコインと重さが異なるコインが紛れています。")
