@@ -3,9 +3,8 @@
 それをコードで実装してみたり...
 
 
-以下、個人的なお気に入り順  (My favorites)  
+以下、個人的なお気に入り順  (My favorites) 
 
-  
 
 ## 12枚のコインの問題　(12 Coins Problem)  　 `./12coins`
 *Find the 1 fake coin out of 12 using a scale just 3 times. Is it heavier or lighter?*
@@ -40,6 +39,20 @@ A,BがランダムにN個混ざった文字列の各文字を、A -> B または
 * 時間計算量(Time) 　　   O(N)
 * 空間計算量(Space) 　  **O(1)** 🤯
 で計算する
+
+## 連続部分列の最大和
+*Find the contiguous subarray with the largest sum*  
+Ex：[-2, 1, -3, 4, -1, 2, 1, -5, 4] -> [4, -1, 2, 1]
+
+全ての連続部分和を計算してもできるが時間計算量O(N^2)  
+O(N)でできそう
+
+
+## 2つの卵と100階建てのビル (Egg Dropping Problem)
+* 二つの卵と100階建てのビルがある。ある階から下の階では卵は割れず、ある階より上の階からは卵が割れる。  
+* この境目が何階なのかを特定したい時、最悪試行回数をなるべく少なくしたい時どのような戦略を立てればいい？？
+
+⭐︎ 最悪試行回数が最小になる時 ＝　どのような条件に対しても同一の最悪試行回数で特定できる時
 
 ## オランダ国旗問題 (Dutch National Flag Problem)
 *Sort 3 types of items in-place.*
