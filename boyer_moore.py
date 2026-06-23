@@ -5,11 +5,18 @@ print("please \"end\" at the end of the list")
 
 answer = ""
 count = 0
-while(input() != "end"):
+
+while True:
+
+    val = input()
+    
+    if val == "end":
+        break
+    
     if count == 0:
-        answer = input()
+        answer = val
         count = 1
-    elif answer == input():
+    elif answer == val:
         count += 1
     else:
         count -= 1
