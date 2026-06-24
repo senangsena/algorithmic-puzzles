@@ -1,9 +1,22 @@
 # Logic Puzzles & Algorithms
 前提知識の要らない、純粋なひらめきで解くアルゴリズム問題  
 それをコードで実装してみたり...
+```
+algorithmic-creativity/
+├── README.md       <- ⭐️
+├── STREAM/         <- ストリーム系
+│   ├── README.md
+│   └── ...
+├── algorithms/     <-　その他
+│   ├── README.md
+│   └── ...
+│ 
+└── 12coins/       
+    └── ...
+```
 
 
-以下、個人的なお気に入り順  (My favorites) 
+以下、個人的なお気に入り**Top 10**✨  (My favorites) 
 
 <br>
 
@@ -17,6 +30,14 @@
 * 考えられる状況は、偽物コインの番号12通り ｘ 重い軽いの2通り = **24**通り < 天秤3回で表せる状況は 3^3 = **27**通り　なので理論的には解けるはず 
 
 ただしこの条件で考えるには**ほぼ毎回の天秤で3分岐を有効に使う**必要がある -> どんな工夫ができるか
+
+```
+└── 12coins/
+    ├── README.md
+    ├── 12coins_explanation.md  <- 解説
+    ├── play_12coins.py         <- 実際に遊んでみる
+    └── solve12coins.py         <- プログラムに解かせる
+```
 
 <br>
 
@@ -85,7 +106,6 @@ A,BがランダムにN個混ざった文字列の各文字を、A -> B または
 ⭐︎ 最悪試行回数が最小になる時 ＝　どのような条件に対しても同一の最悪試行回数で特定できる時
 
 <br>
-
 
 ## 連続部分列の最大和
 *Find the contiguous subarray with the largest sum*  
