@@ -55,6 +55,19 @@ end
 等確率保証アルゴリズムの拡張。1つではなく3つのデータを等確率で選びたい時どうする？
 
 
+## 株の最大利益 (Best Time to Buy and Sell Stock) `stock.py`
+*Maximize profit by choosing a single day to buy and a single day to sell.*  
+
+* ある銘柄の日々の価格（自然数）が、1日目から順に流れてくる。
+* 「一度だけ株を買い、その後（未来）の日に一度だけ株を売る」ことができる。
+* この時、得られる 最大の利益 を計算するアルゴリズム（利益が出ない場合は0とする）。  
+
+`Ex: 7 -> 1 -> 5 -> 3 -> 6 -> 4 -> end  => 5 (価格1で買い、価格6で売るため)`
+* 時間計算量(Time)      O(N)
+* 空間計算量(Space)    O(1) 🤯  
+
+過去の価格履歴を全てリストに保存しておくことはできない。
+
 ## AB文字列分断の最短変換問題　(Minimum Flips to Make a String Monotone)   `separateAB.py`
 *Sort 2 types of items in-place.*
 
@@ -64,20 +77,6 @@ A,BがランダムにN個混ざった文字列の各文字を、A -> B または
 で計算する
 
 <br>
-
-## 株の最大利益 (Best Time to Buy and Sell Stock) `buy_and_sell_stock.py`
-*Maximize profit by choosing a single day to buy and a single day to sell.*  
-
-* ある銘柄の日々の価格（自然数）が、1日目から順にストリームとして流れてくる。
-* あなたは「一度だけ株を買い、その後（未来）の日に一度だけ株を売る」ことができる。
-* この時、得られる 最大の利益 を計算するアルゴリズム（利益が出ない場合は0とする）。  
-
-`Ex: 7 -> 1 -> 5 -> 3 -> 6 -> 4 -> end  => 5 (価格1で買い、価格6で売るため)`
-* 時間計算量(Time)      O(N)
-* 空間計算量(Space)    O(1) 🤯  
-
-過去の価格履歴を全てリストに保存しておくことはできない。
-
 
 ## 2つの卵と100階建てのビル (Egg Dropping Problem)
 * 二つの卵と100階建てのビルがある。ある階から下の階では卵は割れず、ある階より上の階からは卵が割れる。  
