@@ -138,3 +138,9 @@ A,BがランダムにN個混ざった文字列の各文字を、A -> B または
 
 <br>
 
+階段の出力
+PS C:\Users\dev-STR\Desktop\sena> python .\stairs_cost.py
+
+15
+6
+
