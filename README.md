@@ -5,10 +5,7 @@
 ```
 algorithmic-creativity/
 ├── README.md       <- ⭐️
-├── STREAM/         <- ストリーム系
-│   ├── README.md
-│   └── ...
-├── algorithms/     <-　その他
+├── algorithms/     <-　その他の問題
 │   ├── README.md
 │   └── ...
 │ 
@@ -17,7 +14,7 @@ algorithmic-creativity/
 ```
 
 
-以下、個人的なお気に入り**Top 10**✨  (My favorites) 
+以下、個人的なお気に入り順  (My favorites) 
 
 <br>
 
@@ -127,10 +124,4 @@ A,BがランダムにN個混ざった文字列の各文字を、A -> B または
     　**これをO(1)でするには？**  
 
 <br>
-
-階段の出力
-PS C:\Users\dev-STR\Desktop\sena> python .\stairs_cost.py
-
-15
-6
 
