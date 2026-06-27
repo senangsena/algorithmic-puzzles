@@ -50,6 +50,18 @@ algorithmic-creativity/
 
 <br>
 
+## 過半数判定2 (Majority Element II) `majority2.py`
+*Find all elements that appear more than ⌊N/3⌋ times in a stream.*
+
+過半数判定アルゴリズムの進化版  
+「**N/3**回より多く」 登場した**すべて**の数字を特定するアルゴリズム。
+
+Ex: 3 -> 2 -> 3 -> 1 -> 2 -> end  => [3, 2]
+(※N=5なので、5/3=1.66... より多く登場した3と2が答え)
+* 時間計算量(Time)      O(N)
+* 空間計算量(Space)    O(1) 🤯
+
+
 ## 等確率保証アルゴリズム (Reservoir Sampling🎲) `reservoir_sampling.py`
 N個の異なるデータが流れてくる。Nがいくつかはデータを全て読み終わった後に初めてわかる。データは巨大なため、どこかに全て保存しておくことはできない。  
 
