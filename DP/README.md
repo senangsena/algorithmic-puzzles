@@ -9,7 +9,7 @@ ex) [10, 15, 20] -> 15 (start -> 1(15) -> goal)
 `stairs_cost.py`: dp実装  
 `stairs_cost2.py`: 直感的な局所的最適解に陥る実装
 
-## 最長増加部分列 (Longest Increasing Subsequence)
+## 最長増加部分列 (Longest Increasing Subsequence) `increasing_sub.py`
 * 配列の中で、要素が単調増加している最長部分列の長さを求める。
 * 連続していなくて良い（順番入れ替えは❌）
 

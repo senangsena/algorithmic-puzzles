@@ -41,7 +41,7 @@ ex) [1, 3, 2] -> [2, 1, 3]
 * 時間計算量　O(N)
 * 空間計算量　O(1)
 
-## 未知の最小正整数 (First Missing Positive) first_missing_positive.py
+## 未知の最小正整数 (First Missing Positive) `first_missing_positive.py`
 *Find the smallest missing positive integer in an unsorted array.*
 
 + ランダムな整数（負の数や0、極端に大きい数も含まれる）が格納された配列が与えられる。  
