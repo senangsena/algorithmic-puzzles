@@ -85,6 +85,23 @@ end
 
 等確率保証アルゴリズムの拡張。1つではなく3つのデータを等確率で選びたい時どうする？
 
+```
+python3 reservoir_3sampling.py 
+neaor
+dnvaorb
+wefn
+ds
+nvrp
+espdi
+e
+vnoe
+d
+vrnk
+nwefo
+end
+"vrnk", "nwefo", "espdi" are selected by 3 / 11 probability.
+```
+
 
 ## 株の最大利益 (Best Time to Buy and Sell Stock) `stock.py`
 *Maximize profit by choosing a single day to buy and a single day to sell.*  
