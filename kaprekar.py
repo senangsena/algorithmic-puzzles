@@ -8,8 +8,8 @@ def do_one_update(number: int) -> int:
     for numchar in list_num:
         four_digits.append(int(numchar)) # [1, 3, 4, 2]
 
-    while len(four_digits) < 4:
-        four_digits = [0] + four_digits
+    while len(four_digits) < 4: # 3桁以下のときは先頭に0を付け足す
+        four_digits = [0] + four_digits 
 
     four_digits.sort()
 
@@ -32,10 +32,6 @@ def do_one_update(number: int) -> int:
     return dif
 
 def kaprekar(number: int) -> int:
-
-    if len(str(number)) != 4:
-        print("Error")
-        exit(1)
     
     before = None # xx
     after = number # xxxx
@@ -47,4 +43,22 @@ def kaprekar(number: int) -> int:
     return after
 
 
-print(kaprekar(2345))
+
+if __name__ == "__main__":
+    
+    print("Enter your favorite number(0001 - 9998) Numbers with all identical digits (e.g., 1111, 2222) are not allowed.")
+
+    while True:
+
+        val = input()
+
+        if val != "end":
+
+            if int(val)%1111 == 0:
+                print("Numbers with all identical digits (e.g., 1111, 2222) are not allowed. Try again.")
+                continue
+            
+            print(kaprekar(int(val)))
+
+        else:
+            break
