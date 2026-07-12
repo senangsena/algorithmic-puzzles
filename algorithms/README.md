@@ -2,6 +2,18 @@
 
 その他
 
+## 📈 連続部分配列の最大積 (Maximum Product Subarray) `find_maxproduct.py`
+*Find the contiguous subarray with the largest product. Beware of negative numbers turning into giants!*  
+
+* 自然数がランダムに混ざった整数の配列が与えられる（例: [2, 3, -2, 4, -1]）。
+* この配列の中で、「連続する」部分配列の要素をすべて掛け合わせたとき、その積が最大になる値を返してください。  
+
+
+Ex) [2, 3, -2, 4, -1] -> 48 (全てを掛け合わせると 48 になり、これが最大)  
+
+* Time: O(N)
+* Space: O(1)
+
 ## 3色ソート問題 `sort_colors.py`
 
 0, 1, 2のみでできた配列をソートする
