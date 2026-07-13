@@ -2,6 +2,35 @@
 
 その他
 
+## 連続部分列の最大和 `largest_subarray.py`
+*Find the contiguous subarray with the largest sum*  
+流れてくる数字を読み、和が最大になる連続部分列を見つけるアルゴリズム  
+`Ex：[-2, 1, -3, 4, -1, 2, 1, -5, 4] -> 6`
+
+* 時間計算量(Time)      　O(N)
+* 空間計算量(Space)     　**O(1)** 🤯
+
+全ての連続部分和を計算してもできるが時間計算量O(N^2), 空間計算量O(N)  
+
+<br>
+
+## 循環検出アルゴリズム (Cycle Detection Algorithm)
+連結リストの中にループがあるかを探したい。  
+
+普通に考えると...　今まで通ったノードを全て記憶し、そのうちどれかに戻ったらループ発見　→ 空間計算量**O(N)** 😕  
+    　**これをO(1)でするには？**  
+
+<br>
+
+## カプレカ数のブラックホール `kaprekar.py`
+
+* 4桁の数字がある（「1111」などのゾロ目以外）
+* その数字の各桁を並べ替えてできる「最大の数（降順）」から「最小の数（昇順）」を引きます。
+* 出てきた答えに対して、再び同じ操作を繰り返します。
+
+どんな4桁の数字から始めても、何度か繰り返すと必ず**特定の数字**に辿り着きます。それはいくつ？
+
+
 ## 📈 連続部分配列の最大積 (Maximum Product Subarray) `find_maxproduct.py`
 *Find the contiguous subarray with the largest product. Beware of negative numbers turning into giants!*  
 
@@ -83,3 +112,5 @@ Ex2: [7, 8, 9, 11, 12] -> 1  (※1が含まれていないため)
 
 * 回転とは？  
     [1, 2, 3, 4, 5, 6] -> [3, 4, 5, 6, 1, 2]
+
+* target: intが与えられ、target in roteted_numbersならindexを、not なら-1を返す
