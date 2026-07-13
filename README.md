@@ -102,6 +102,9 @@ end
 "vrnk", "nwefo", "espdi" are selected by 3 / 11 probability.
 ```
 
+## 確率1/7アルゴリズム
+* 1から5までの整数を等確率で出力する関数（乱数生成器）がある  
+* これを使って、1から7までの整数を等確率で出力する関数を作るアルゴリズムは？
 
 ## 株の最大利益 (Best Time to Buy and Sell Stock) `stock.py`
 *Maximize profit by choosing a single day to buy and a single day to sell.*  

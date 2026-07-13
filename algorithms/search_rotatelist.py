@@ -3,7 +3,7 @@
 
 def search_rotetelist(numbers: list[int], target: int) -> int:
 
-    if not numbers or (not target):
+    if not numbers or (target == None):
         return -1
 
     if numbers[0] <= target: # targetは境目よりも前にある
@@ -38,7 +38,7 @@ def search_rotetelist(numbers: list[int], target: int) -> int:
                 left = (left + right) // 2 + 1
             else: # numbers[(left + right) // 2] > target　の時は、境目より前なのか後ろなのかで場合分け
 
-                if numbers[(left + right) // 2] > numbers[0]: # 境目より前 -> leftを動かし視点を右に(後ろに)
+                if numbers[(left + right) // 2] >= numbers[0]: # 境目より前 -> leftを動かし視点を右に(後ろに)
 
                     left = (left + right) // 2 + 1
                 else: # 境目より後ろ -> 見るところあっている
