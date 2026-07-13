@@ -9,17 +9,14 @@ def generate_random5():
 # generate_random5()のみを使って、generate_random7()を実装する
 def generate_random7():
 
-    # まずは25通りの状況を7個生み出す
-    # 1〜5ではなく0~4を生成する乱数生成器の方がやりやすいので-1する
-    numbers = []
-    for i in range(7): # 1~25の乱数
-        n = (generate_random5()-1) * 5 + (generate_random5()-1) + 1
-        numbers.append(n)
-    
-    
+    while True:
+        # 0~24の乱数
+        number = (generate_random5()-1) * 5 + generate_random5() - 1
+
+        if number < 21: # 0~20の時に限定して、
+            return number // 3 + 1
     
 
-        
 def test():
 
     counts = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0}
