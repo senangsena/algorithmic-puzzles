@@ -11,12 +11,14 @@ algorithmic-creativity/
 │   ├── README.md
 │   └── ...
 │ 
-└── 12coins/       
+└── 12coins/        <- 12コイン問題を解く・プログラムに解かせる・解説
 │   └── ...
 │ 
-└── DP/       
-    └── ...
-
+└── DP/             <- 動的計画法       
+│   └── ...
+│ 
+└── search algorithm/       <- グラフアルゴリズム
+    └── waterjug.py         <- ex. "8Lと3Lの容器で5Lを作れ"といった問題をBFSで解く
 
 ```
 
