@@ -8,7 +8,7 @@ def cal_min(l: list[int], start:int, end:int) -> int: # start~end で最も小�
 
     min_val = l[start]
     index = start
-    ans = 0
+    ans = index
 
     while index < end + 1:
         if min_val > l[index]:
@@ -24,10 +24,10 @@ def cal_max(l: list[int], start:int, end:int) -> int: # start~end で最も大�
     max_val = l[start]
     index = start
 
-    ans = 0
+    ans = index
 
     while index < end + 1:
-        if max_val < l[index]:
+        if l[ans] < l[index]:
             max_val = l[index]
             ans = index
 
@@ -47,10 +47,14 @@ def max_len_range(numbers: list[int], limit: int)-> int: # [10,1,2,3,2,1], 4
     
     while end < len(numbers): # 0 < 6
 
+
+        print(f"start = {start}, end = {end}")
+        print(f"current_min = {current_min_index}, current_max = {current_max_index}")
+
  
         if numbers[current_max_index] - numbers[current_min_index] > limit: # 0 > 4
 
-            if numbers[end] > current_max_index: # 上振れでlimit超過　→ minを動かす
+            if numbers[end] > numbers[current_max_index]: # 上振れでlimit超過　→ minを動かす
                 start = min(current_min_index + 1, len(numbers) - 1)
                 current_min_index = cal_min(numbers, start, end)
                 
@@ -62,16 +66,14 @@ def max_len_range(numbers: list[int], limit: int)-> int: # [10,1,2,3,2,1], 4
             if max_len < end - start: # 0 < 1
                 max_len = end - start  
             
-        if end < len(numbers) and numbers[end] < numbers[current_min_index]:
-            current_min_index = end
-        if end < len(numbers) and numbers[end] > numbers[current_max_index]:
-            current_max_index = end
+        current_min_index = cal_min(numbers,start,end)
+        current_max_index = cal_max(numbers,start,end)
 
         end += 1     
     
         
     return max_len + 1
 
-print(max_len_range([10,1,2,3,2,1], 2))
+if __name__ == "__main__":
 
-# new * googler = noogler
+    print(max_len_range([1,5,6],2))
