@@ -1,7 +1,8 @@
 <h1 align="center">Logic Puzzles & Algorithms</h1>
 
-*Work with what you've got / Work with the bias!!*  
+*<h4 align="center">Work with what you've got / Work with the bias!!</h4>*
 
+---
 前提知識の要らない、純粋なひらめきで解くアルゴリズム問題  
 それをコードで実装してみたり...
 ```
@@ -25,7 +26,7 @@ algorithmic-creativity/
 
 以下、個人的なお気に入り順  My favorites:)  
 
-<br>
+---
 
 ## 12枚のコインの問題　(12 Coins Problem)  　 `./12coins`
 *Find the 1 fake coin out of 12 using a scale just 3 times. Is it heavier or lighter?*
@@ -46,7 +47,7 @@ algorithmic-creativity/
     └── solve12coins.py         <- プログラムに解かせる
 ```
 
-<br>
+---
 
 ## 過半数判定アルゴリズム (Majority Vote Algorithm) `boyer_moore.py`
 *Find the majority element in O(1) space.*
@@ -57,7 +58,7 @@ algorithmic-creativity/
   
 つまり過去に登場した数字と登場回数のmappingは作れないということ!
 
-<br>
+---
 
 ## 過半数判定2 (Majority Element II) `majority2.py`
 *Find all elements that appear more than ⌊N/3⌋ times in a stream.*
@@ -70,6 +71,7 @@ Ex: 3 -> 2 -> 3 -> 1 -> 2 -> end  => [3, 2]
 * 時間計算量(Time)      O(N)
 * 空間計算量(Space)    O(1) 🤯
 
+---
 
 ## 等確率保証アルゴリズム (Reservoir Sampling🎲) `reservoir_sampling.py`
 N個の異なるデータが流れてくる。Nがいくつかはデータを全て読み終わった後に初めてわかる。データは巨大なため、どこかに全て保存しておくことはできない。  
@@ -88,7 +90,7 @@ end
 "noevar" is selected with 1 / 5 probability
 ```
 
-<br>
+---
 
 ## 等確率保証アルゴリズム拡張 (Reservoir Sampling🎲) `reservoir_3sampling.py`
 
@@ -111,9 +113,13 @@ end
 "vrnk", "nwefo", "espdi" are selected by 3 / 11 probability.
 ```
 
+---
+
 ## 確率1/7アルゴリズム `random7.py`
 * 1から5までの整数を等確率で出力する関数（乱数生成器）がある  
 * これを使って、1から7までの整数を等確率で出力する関数を作るアルゴリズムは？
+
+---
 
 ## 株の最大利益 (Best Time to Buy and Sell Stock) `stock.py`
 *Maximize profit by choosing a single day to buy and a single day to sell.*  
@@ -128,9 +134,13 @@ end
 
 過去の価格履歴を全てリストに保存しておくことはできない。
 
+---
+
 ## 不均一なコインと50%  `unbalance.py`
 * 不均一なコイン（表が出る確率が例えば70%など、不明かつ偏りがあるコイン）が1枚ある
 * このコインを使って、正確に50%の確率で「勝ち」か「負け」を決めるゲームを作るアルゴリズムは？
+
+---
 
 ## AB文字列分断の最短変換問題　(Minimum Flips to Make a String Monotone)   `separateAB.py`
 *Sort 2 types of items in-place.*
@@ -140,7 +150,7 @@ A,BがランダムにN個混ざった文字列の各文字を、A -> B または
 * 空間計算量(Space) 　  **O(1)** 🤯
 で計算する
 
-<br>
+---
 
 ## 2つの卵と100階建てのビル (Egg Dropping Problem) `100eggs.md`
 * 二つの卵と100階建てのビルがある。ある階から下の階では卵は割れず、ある階より上の階からは卵が割れる。  
